@@ -1,0 +1,546 @@
+
+html{
+    font-size:1px;
+    height: 100%;
+}
+
+
+body {
+    display: absolute;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('ProductSans-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Google Sans thin';
+    src: url('ProductSans-Thin.woff') format('woff');
+}
+
+.navbar{
+    height: 7vh;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+    margin-left: 20rem;
+}
+
+.logo{
+    display: flex;
+    margin:15rem;
+    width: 90rem;
+    height:50rem
+}
+
+.middle{
+    padding: 5rem;
+    width: 75%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.search-box {
+    background-color: #eaf1fb;
+    display: flex;
+    align-items: center;
+    height: 48rem;
+    flex-grow: 1;
+    padding: 2rem 10rem;
+    border: none;
+    border-radius: 48rem;
+    margin-right: 5rem;
+}
+
+.search-icon{
+    display: flex;
+
+}
+
+
+#search-input {
+    background-color: #eaf1fb;
+    font-family: 'Google Sans thin';
+    font-size: 16rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    outline: none;
+    max-width: 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+ 
+    border: 0rem solid #ccc;
+    margin: 2rem;
+}
+
+.right{
+
+    
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.Active{
+    background-color: #eaf1fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100rem;
+    height: 48rem;
+    padding: 2rem 10rem;
+    border: none;
+    border-radius: 48rem;
+    font-family: 'Google Sans';
+    font-size: 16rem;
+    color: #1f1f1fd7;
+
+}
+
+.Active::before {
+    content: "";
+    width: 12rem;
+    height: 12rem;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10rem; 
+}
+
+.Active .down-arrow{
+    transform: translate3d(5rem,2rem,0);
+}
+
+.top-buttons{
+    display: flex;
+    margin: 10rem;
+}
+
+.main {
+    display: flex;
+}
+
+.side-container {
+    display: inline-block;
+    width: 16%;
+
+    background-color: #fff;
+    border-radius: 5rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+}
+
+.sidehead {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+}
+
+.chats {
+    width: 100%;
+    height: 50%;
+}
+
+.spaces {
+    width: 100%;
+    height: 50%;
+}
+
+p {
+    font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 15rem;
+    letter-spacing: .25rem;
+    font-weight: 500;
+}
+
+.down {
+    border-radius: 10rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    height: 93vh;
+    width: 90%;
+    padding: 0rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100rem;
+    background-color: #fff;
+    border-bottom: 1rem solid rgba(0, 0, 0, 0.39);
+}
+
+.back-button {
+    height: 70%;
+    border-radius: 24rem;
+    padding:5rem;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    height: 50rem;
+}
+
+.name-box {
+    padding: 5rem;
+    opacity: 90%;
+}
+
+.user-name {
+    font-feature-settings: "liga" 0;
+    font-variant-ligatures: no-contextual;
+    font-family: 'Google Sans';
+    font-size: 25rem;
+    line-height: 25rem;
+    margin: 10rem 8rem;
+}
+
+.member {
+    font-feature-settings: "liga" 0;
+    font-variant-ligatures: no-contextual;
+    font-family: 'Google Sans';
+    font-size: 12rem;
+    line-height: 6rem;
+    margin: 10rem;
+    margin-left: -25rem;
+}
+
+.profile-picture {
+    height: 32rem;
+    width: 32rem;
+}
+
+.toggle-buttons {
+    display: flex;
+    padding-left: 34rem;
+
+}
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: #50545a;
+    margin: 0 10rem;
+    font-feature-settings: "liga" 0;
+    font-variant-ligatures: no-contextual;
+    font-family: "Google Sans", Arial, sans-serif;
+    height: 32rem;
+    pointer-events: auto;
+    text-align: center;
+    border-radius: 6rem 6rem 0 0;
+
+}
+
+.toggle-button.active {
+    color: blue; /* Change to your preferred color */
+}
+
+/* Style for the line below the button */
+.toggle-button.active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2rem;
+    background-color: blue;
+    
+}
+
+
+
+.message-display {
+    height: 72%;
+    padding: 10rem;
+
+}
+
+.right-buttons {
+    display: flex;
+    margin-right: 10rem;
+
+}
+
+.right-button {
+    margin: 5rem;
+    
+}
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+}
+
+
+
+.input-box {
+    display: flex;
+    max-width: 50%;
+    height: 48rem;
+    flex-grow: 1;
+    padding: 2rem 10rem;
+    border: 1rem solid #ccc;
+    border-radius: 48rem;
+    margin-right: 5rem;
+}
+
+.emoji-icons {
+    display: flex;
+    
+}
+
+#message-input {
+    outline: none;
+    max-width: 80%;
+    height: 40rem;
+    flex-grow: 1;
+    border: 0rem solid #ccc;
+    margin: 2rem;
+}
+
+button {
+    padding: 5rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 36rem;
+    cursor: pointer;
+}
+
+svg{
+    width: 24rem;
+    height: 24rem;
+    border-radius: 6rem;
+}
+
+.svg-special{
+    width: 20rem;
+    height: 22rem;
+}
+
+.svg-send-btn {
+    width: 36rem;
+    height:36rem;
+}
+
+.plus-btn {
+    width : 36rem;
+    height :36rem;
+    margin-right: 2rem;
+}
+
+img {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 6rem;
+}
+
+.inside-btn {
+    margin: 6rem 0;
+    border-radius: 24rem;
+}
+
+button:hover {
+    background-color: #e7e7e7be;
+}
+
+.options-icon{
+    display: none;
+    visibility: hidden;
+}
+
+.emoji-icons-dropdown{
+    
+    display: none;
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 840px){
+    html{
+        font-size: 0.8px;
+    }
+
+    .message-display{
+        height: 78vh;
+    }
+
+    .chat-header{
+        height: 7vh;
+    }
+   
+    .emoji-icons {
+        display: none;
+        visibility:hidden;
+    }
+
+    .options-icon {
+        display: inline-flex;
+        visibility:visible;
+    }
+
+    .emoji-icons-dropdown{
+        width: 48rem;
+        height: 190rem;
+        background-color: #ffffff;
+        box-shadow: 0rem 0rem 6rem 3rem rgba(2, 0, 0, 0.212);
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        visibility:hidden;
+        transform: translate3d(52vb, -18vh, 0);
+
+    }
+
+    #message-input{
+        max-width: 90%;
+    }
+
+    .input-box {
+        max-width: 75%;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: .8px;
+    }
+
+
+    .navbar{
+        height: 7vh;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        position: relative;
+        width: 100vw;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .toggle-button{
+        margin: 0 60rem;
+        
+    }
+    .toggle-buttons{
+        padding-left: 0px;
+        justify-content: space-between;
+    }
+
+    .side-container{
+        display: none;
+    }
+
+    .main{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .chat-container{
+        width: 100vw;
+    }
+    .message-display{
+        height: 65vh;
+    }
+
+
+    .emoji-icons-dropdown{
+        transform: translate3d(36vb, -24vh, 0);
+    }
+
+    .chat-header{
+        height: 10vh;
+    }
+
+    
+    .logo{
+        display: none;
+    }
+
+    
+    .top-buttons{
+        display: none;
+    }
+
+    .search-box{
+        width: 80%;
+    }
+
+    .middle{
+        width: 50vb;
+    }
+
+    .left{
+        width: 5vb;
+        margin-left: 10rem;
+    }
+    .right{
+        display: none;
+    }
+
+ 
+    
+}
+

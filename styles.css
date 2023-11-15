@@ -546,7 +546,11 @@ button:hover {
         display: none;
     }
 
- 
+   .message{
+        font-size: small;
+        margin-top: 50vh;
+        margin-left: 25vb;
+    }
     
 }
 

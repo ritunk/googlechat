@@ -460,6 +460,12 @@ button:hover {
 
 }
 
+.message{
+    font-size: large;
+    margin-top: 400rem;
+    margin-left: 900rem;
+}
+
 
 @media only screen and (max-width: 500px){
     html{
